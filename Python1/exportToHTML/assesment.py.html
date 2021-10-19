@@ -1,0 +1,256 @@
+<html>
+<head>
+<title>assesment.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+.s4 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+assesment.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># Question 1</span>
+
+<span class="s0"># 1</span>
+
+<span class="s0"># python is a powerful, high level, general purpose programming language. It is easy to learn and</span>
+
+<span class="s0"># compact and easier understandable to write code.</span>
+
+<span class="s0"># 2</span>
+
+<span class="s0"># count() is a function that counts the number of time a string/int appears in a given list.</span>
+
+<span class="s0"># example</span>
+
+<span class="s1">my_list = [</span><span class="s2">&quot;a,b,c,d,e,f,a,b,d&quot;</span><span class="s1">]</span>
+
+<span class="s1">print(my_list.count(</span><span class="s2">&quot;a&quot;</span><span class="s1">))</span>
+
+<span class="s0"># the above example will return the number of time 'a' appears in the list 'my_list' which is 2</span>
+
+
+<span class="s0"># 3</span>
+
+<span class="s0"># the function ord() takes a single character and returns its numerical values as defined in ASCII Table</span>
+
+<span class="s0"># the chr() function basically does the opposite of ord(). It takes the numerical value and returns</span>
+
+<span class="s0"># the chatacter equevalent of it as defined in the ascii table.</span>
+
+<span class="s0"># example</span>
+
+<span class="s1">x = chr(</span><span class="s3">72</span><span class="s1">)</span>
+
+<span class="s1">print(x)</span>
+
+<span class="s0"># will return the character 'H'</span>
+
+<span class="s1">y = ord(</span><span class="s2">'p'</span><span class="s1">)</span>
+
+<span class="s1">print(y)</span>
+
+<span class="s0"># will return the integer '112'</span>
+
+
+<span class="s0"># 4</span>
+
+<span class="s1">the_string = </span><span class="s2">'2020-11-10_sales.csv'</span>
+
+<span class="s1">new_string = the_string[</span><span class="s3">0</span><span class="s1">:-</span><span class="s3">4</span><span class="s1">]</span>
+
+<span class="s1">print(new_string)</span>
+
+<span class="s0"># 5</span>
+
+<span class="s0"># A List in python can be added to or be subtracted from its values after it has been created and noted by</span>
+
+<span class="s0"># square_bracket[] where as a tuple is immutable and is defined by parenthesis '()'</span>
+
+<span class="s0"># the values in a tuple cannot be changed. cannot be added to or deleted from its values</span>
+
+<span class="s0"># 6</span>
+
+<span class="s0"># The difference between an append() and extend() function is that append() takes an argument and adds it to the end of</span>
+
+<span class="s0"># a list which increases the length of the list by one, where as extend() takes any iterable list as a parameter and</span>
+
+<span class="s0"># and adds to the list, which could increase the list by one or hundreds, depending on the length of the arguments passed.</span>
+
+
+<span class="s0"># 7</span>
+
+<span class="s0"># and infinite loop is one where it does not end. for instance:</span>
+
+<span class="s2">&quot;&quot;&quot; 
+ 
+x = True 
+ 
+while x: 
+ 
+    do 
+ 
+ 
+ 
+&quot;&quot;&quot;</span>
+
+<span class="s0"># the above code does not end as the value of x is always true unless its been edited within the while loop</span>
+
+<span class="s0"># you can quit the program programmatically by giving it an exit() function within the while loop.</span>
+
+
+<span class="s2">&quot;&quot;&quot; 
+ 
+x = True 
+ 
+while x: 
+ 
+    do 
+ 
+    exit() 
+ 
+ 
+ 
+&quot;&quot;&quot;</span>
+
+<span class="s0"># this will exit as soon as the loop reaches the exit() funtion. You can also quit the program by 'clt + C' on</span>
+
+<span class="s0"># the keyboard.</span>
+
+
+<span class="s0"># 8</span>
+
+
+<span class="s0"># a functions parameter boils down to real value thats passed into a function as its argument.</span>
+
+
+<span class="s0"># 9</span>
+
+<span class="s2">&quot;&quot;&quot; 
+ 
+my_dic = {&quot;Apple&quot;:2,&quot;Juice&quot;:5&quot;} 
+ 
+ 
+ 
+my_dic[&quot;Strawberry&quot;]=6 
+ 
+ 
+ 
+&quot;&quot;&quot;</span>
+
+<span class="s0"># 10</span>
+
+<span class="s0">#Bool(immutable), int(mutable), List(mutable), Tuple(immutable), Str(mutable), Set(mutable), Dict(mutable)</span>
+
+<span class="s0"># Question2</span>
+
+<span class="s1">text = </span><span class="s2">&quot;Actual Read TEXT filE&quot;</span>
+
+<span class="s1">print(sum(</span><span class="s3">1 </span><span class="s4">for </span><span class="s1">capital </span><span class="s4">in </span><span class="s1">text </span><span class="s4">if </span><span class="s1">capital.isupper()))</span>
+
+<span class="s0"># 3</span>
+
+<span class="s1">my_string = </span><span class="s2">&quot;Applepie&quot;</span>
+
+<span class="s1">reversed_string = my_string[::-</span><span class="s3">1</span><span class="s1">]</span>
+
+<span class="s1">print(reversed_string)</span>
+
+<span class="s0"># 4</span>
+
+
+<span class="s1">animals = [</span><span class="s2">'cat'</span><span class="s4">, </span><span class="s2">'horse'</span><span class="s4">, </span><span class="s2">'elephant'</span><span class="s4">, </span><span class="s2">'dog'</span><span class="s1">]</span>
+
+
+<span class="s4">def </span><span class="s1">longest_name(animals):</span>
+    <span class="s1">keeping_count = </span><span class="s3">0</span>
+
+    <span class="s4">for </span><span class="s1">name </span><span class="s4">in </span><span class="s1">animals:</span>
+
+        <span class="s4">if </span><span class="s1">len(name) &gt; keeping_count:</span>
+            <span class="s1">keeping_count = len(name)</span>
+
+            <span class="s1">found = name</span>
+
+    <span class="s1">print(</span><span class="s2">&quot;The longest named animal is: &quot; </span><span class="s1">+ found)</span>
+
+
+<span class="s1">longest_name(animals)</span>
+
+<span class="s0"># 5</span>
+
+<span class="s2">&quot;&quot;&quot;my way&quot;&quot;&quot;</span>
+
+<span class="s1">first_number = int(input(</span><span class="s2">&quot;Please enter a digit for operation: &quot;</span><span class="s1">))</span>
+
+<span class="s1">operation = input(</span><span class="s2">&quot;Please enter an operation ( + - * /): &quot;</span><span class="s1">)</span>
+
+<span class="s1">second_number = int(input(</span><span class="s2">&quot;Please enter your second digit for operation: &quot;</span><span class="s1">))</span>
+
+<span class="s4">if </span><span class="s1">operation == </span><span class="s2">&quot;*&quot;</span><span class="s1">:</span>
+
+    <span class="s1">result = first_number * second_number</span>
+
+<span class="s4">elif </span><span class="s1">operation == </span><span class="s2">&quot;/&quot;</span><span class="s1">:</span>
+
+    <span class="s1">result = first_number / second_number</span>
+
+<span class="s4">elif </span><span class="s1">operation == </span><span class="s2">&quot;+&quot;</span><span class="s1">:</span>
+
+    <span class="s1">result = first_number + second_number</span>
+
+<span class="s4">elif </span><span class="s1">operation == </span><span class="s2">&quot;-&quot;</span><span class="s1">:</span>
+
+    <span class="s1">result = first_number - second_number</span>
+
+<span class="s4">else</span><span class="s1">:</span>
+
+    <span class="s1">result = </span><span class="s2">&quot;Something went wrong. Please check your operation.&quot;</span>
+
+<span class="s1">print(result)</span>
+
+<span class="s2">&quot;&quot;&quot;End of my way&quot;&quot;&quot;</span>
+
+<span class="s2">&quot;&quot;&quot;Examinar's way&quot;&quot;&quot;</span>
+
+<span class="s1">print(</span><span class="s2">&quot;Please select operation:</span><span class="s4">\n</span><span class="s2">1.Add</span><span class="s4">\n</span><span class="s2">2.Subtract</span><span class="s4">\n</span><span class="s2">3.Multiply</span><span class="s4">\n</span><span class="s2">4.Divide</span><span class="s4">\n</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+<span class="s1">select = int(input())</span>
+
+<span class="s1">num1 = int(input(</span><span class="s2">&quot;Please select first number:</span><span class="s4">\n</span><span class="s2">&quot;</span><span class="s1">))</span>
+
+<span class="s1">num2 = int(input(</span><span class="s2">&quot;Please select second number:</span><span class="s4">\n</span><span class="s2">&quot;</span><span class="s1">))</span>
+
+<span class="s4">if </span><span class="s1">select == </span><span class="s3">3</span><span class="s1">:</span>
+
+    <span class="s1">result = num1 + num2</span>
+
+<span class="s4">elif </span><span class="s1">select == </span><span class="s3">4</span><span class="s1">:</span>
+
+    <span class="s1">result = num1 / num2</span>
+
+<span class="s4">elif </span><span class="s1">select == </span><span class="s3">1</span><span class="s1">:</span>
+
+    <span class="s1">result = num1 + num2</span>
+
+<span class="s4">elif </span><span class="s1">select == </span><span class="s3">2</span><span class="s1">:</span>
+
+    <span class="s1">result = num1 - num2</span>
+
+<span class="s4">else</span><span class="s1">:</span>
+
+    <span class="s1">result = </span><span class="s2">&quot;Something went wrong. Please check your operation.&quot;</span>
+
+<span class="s1">print(result)</span>
+
+<span class="s2">&quot;&quot;&quot;End Examinars way&quot;&quot;&quot;</span>
+</pre>
+</body>
+</html>
